@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script defer src="main.js"></script>
+</head>
+
+<body onload="changeSrc()">
+  <div class="wrapper">
+
+    <div class="text-container">
+      <h1>Stay updated!</h1>
+      
+      <div class="h3-div">
+        <h3>Join 60,000+ product managers receiving monthly updates on:</h3>
+      
+      </div>
+      
+      <ul>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+            </g>
+          </svg>
+          <span>Product discovery and building what matters.</span>
+        </li>
+
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+            </g>
+          </svg>
+          <span>Measuring to ensure updates are a success.</span>
+        </li>
+
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+            <g fill="none">
+              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+            </g>
+          </svg>
+          <span>And much more!.</span>
+        </li>
+      </ul>
+
+      <label class="label">
+        <small id="warning-msg">Valid email required</small>
+        <p>Email address</p>
+        <input id="input" type="text" placeholder="Email@company.com">
+        <div class="btn" onclick="popUp()"><b>Subscribe to monthly newsletter</b></div>
+      </label>
+
+    </div>
+    <div class="image-container">
+      <img class="main-img" src="assets/images/illustration-sign-up-desktop.svg" alt="bg-image">
+    </div>
+
+  </div>
+  
+  <!--Pop up card-->
+  <div class="pop-up">
+
+    <img src="assets/images/icon-success.svg" alt="check-mark">
+    
+    <h1>Thanks for <br>Subscribing!</h1>
+    
+    <small>
+      A confirmation email has been sent to <b id="actual_email">ash@loremcompany.com.</b> 
+      Please open it and click the button inside to confirm your subscription.
+    </small>
+    
+    <div class="btn" id="dismiss-btn" onclick="dismiss()">
+      Dismiss message
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Semilore Bankole</a>.
+  </div>
+</body>
+</html>
